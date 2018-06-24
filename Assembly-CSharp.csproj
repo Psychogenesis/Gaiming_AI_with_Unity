@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{9B3C6540-37B7-AFB9-AE8B-1FA4A2E103EC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -43,6 +44,7 @@
     <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -51,6 +53,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\FSM\Entites\BaseEntity.cs" />
+    <Compile Include="Assets\Scripts\FSM\Entites\EntityManager.cs" />
+    <Compile Include="Assets\Scripts\FSM\Entites\EntityType.cs" />
+    <Compile Include="Assets\Scripts\FSM\Entites\Miner.cs" />
+    <Compile Include="Assets\Scripts\FSM\Entites\Wife.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\MinerOwnedStates.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\State.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\FSM\States\WifeOwnedStates.cs" />
+    <Compile Include="Assets\Scripts\FSM\Telegram\CrudeTimer.cs" />
+    <Compile Include="Assets\Scripts\FSM\Telegram\MessageDispatcher.cs" />
+    <Compile Include="Assets\Scripts\FSM\Telegram\Telegram.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\MenuScripts\PauseMenuScript.cs" />
     <Compile Include="Assets\Scripts\Player\Components\PlayerInputComponent.cs" />
