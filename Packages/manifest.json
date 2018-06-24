@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "com.unity.entities": "0.0.12-preview.6",
+    "com.unity.ads": "exclude",
+    "com.unity.purchasing": "exclude"
+  },
+  "registry": "https://packages.unity.com",
+  "testables": [
+    "com.unity.collections",
+    "com.unity.entities",
+    "com.unity.jobs"
+  ]
+}
